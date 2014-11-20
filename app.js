@@ -7,6 +7,8 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 // var users = require('./routes/users');
+var mongoose = require('mongoose');
+
 var app = express();
 
 // view engine setup
@@ -44,7 +46,14 @@ if (app.get('env') === 'development') {
             error: err
         });
     });
+  mongoose.connect('mongodb://localhost/mongo', function (err, data){
+    if (err)
+      console.log("error with mongodb:" + err);
+      }
+    );
 }
+
+
 
 // production error handler
 // no stacktraces leaked to user
