@@ -8,6 +8,10 @@ var fs = require('fs');
 //   res.render('index', { title: 'Express' });
 // });
 
+router.get('/todo', function(req, res) {
+  res.render('index-angular.html');
+});
+
 router.get('/', function(req, res) {
   res.render('index', { title: 'Joe Lau\'s App',
                        age: 33});
