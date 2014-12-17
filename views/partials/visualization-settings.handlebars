@@ -1,0 +1,36 @@
+<form name="visualSettingsForm" ng-controller="vsCtrl">
+  <div class="box" ng-repeat="setting in settings">
+
+    <div class="row">
+      {{setting.key}}
+      <a class="right" href="#" data-toggle="popover"
+         data-content="And here's some amazing content. It's very engaging. right?">
+        <span class="glyphicon glyphicon-question-sign"></span></a>
+
+    </div>
+    <table class="table.compact">
+      <tr ng-repeat="attribute in setting.attributes">
+        <td>
+          <label>
+            {{attribute.key }}
+          </label>
+        </td>
+        <td style="float: left">
+          <div ng-switch on="attribute.type">
+            <div ng-switch-when="selection">
+              <select ng-model="myColor" ng-options="value for value in attribute.value">
+                  <option value="" ng-if="false"></option>
+              </select>
+            </div>
+            <div ng-switch-default>
+              <input type="{{attribute.type}}" ng-model="attribute.value" />
+            </div>
+          </div>
+
+
+
+        </td>
+      </tr>
+    </table>
+  </div>
+</form>

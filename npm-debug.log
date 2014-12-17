@@ -1,0 +1,69 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'express-handlebars' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'express-handlebars@~0.5.2', null ]
+6 verbose cache add name=undefined spec="express-handlebars@~0.5.2" args=["express-handlebars@~0.5.2",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'express-handlebars@~0.5.2',
+7 verbose parsed url   path: 'express-handlebars@~0.5.2',
+7 verbose parsed url   href: 'express-handlebars@~0.5.2' }
+8 verbose cache add name="express-handlebars" spec="~0.5.2" args=["express-handlebars","~0.5.2"]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: '~0.5.2',
+9 verbose parsed url   path: '~0.5.2',
+9 verbose parsed url   href: '~0.5.2' }
+10 verbose addNamed [ 'express-handlebars', '~0.5.2' ]
+11 verbose addNamed [ null, '>=0.5.2-0 <0.6.0-0' ]
+12 silly lockFile a1c8aabc-express-handlebars-0-5-2 express-handlebars@~0.5.2
+13 verbose lock express-handlebars@~0.5.2 /Users/joelau/.npm/a1c8aabc-express-handlebars-0-5-2.lock
+14 silly addNameRange { name: 'express-handlebars',
+14 silly addNameRange   range: '>=0.5.2-0 <0.6.0-0',
+14 silly addNameRange   hasData: false }
+15 verbose registry.get https://registry.npmjs.org/express-handlebars not expired, no request
+16 silly addNameRange number 2 { name: 'express-handlebars',
+16 silly addNameRange   range: '>=0.5.2-0 <0.6.0-0',
+16 silly addNameRange   hasData: true }
+17 silly addNameRange versions [ 'express-handlebars',
+17 silly addNameRange   [ '0.0.1',
+17 silly addNameRange     '0.0.2',
+17 silly addNameRange     '1.0.0-rc-1',
+17 silly addNameRange     '1.0.0-rc-2',
+17 silly addNameRange     '1.0.0',
+17 silly addNameRange     '1.0.1',
+17 silly addNameRange     '1.0.2',
+17 silly addNameRange     '1.0.3',
+17 silly addNameRange     '1.1.0' ] ]
+18 silly lockFile a1c8aabc-express-handlebars-0-5-2 express-handlebars@~0.5.2
+19 silly lockFile a1c8aabc-express-handlebars-0-5-2 express-handlebars@~0.5.2
+20 error notarget No compatible version found: express-handlebars@'>=0.5.2-0 <0.6.0-0'
+20 error notarget Valid install targets:
+20 error notarget ["0.0.1","0.0.2","1.0.0-rc-1","1.0.0-rc-2","1.0.0","1.0.1","1.0.2","1.0.3","1.1.0"]
+20 error notarget
+20 error notarget This is most likely not a problem with npm itself.
+20 error notarget In most cases you or one of your dependencies are requesting
+20 error notarget a package version that doesn't exist.
+21 error System Darwin 13.4.0
+22 error command "node" "/usr/local/bin/npm" "install" "express-handlebars"
+23 error cwd /Users/joelau/Dropbox/nodeJS/nodeTutorial
+24 error node -v v0.10.33
+25 error npm -v 1.4.28
+26 error code ETARGET
+27 verbose exit [ 1, true ]
